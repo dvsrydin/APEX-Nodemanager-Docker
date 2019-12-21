@@ -1,6 +1,5 @@
 version: '3.2'
 services:
-
   nodemanager:
     build:
       context: manager/app
@@ -12,3 +11,20 @@ services:
     ports:
       - 9100:9100
       - 9090:9090
+    networks:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    container_name: mongo-db-container
+    volumes:
+    - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js:ro
+    - ./mongo-volume:/data/db
+    ports:
+      - 27017-27019:27017-27019
+    networks:
+      - mongodb
+
+networks:
+  mongodb:
+    driver: bridge
