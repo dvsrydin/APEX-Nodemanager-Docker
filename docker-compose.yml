@@ -6,8 +6,7 @@ services:
       context: manager/app
       args:
         GRADLE_VERSION: "4.10.3"
-        APP_PORT: 9100
-        CORE_PORT: 9090
+        APP_PORT: 9200
     image: nodemanager
     container_name: nodemanager
     ports:

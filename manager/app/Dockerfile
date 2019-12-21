@@ -2,12 +2,13 @@ FROM adoptopenjdk/openjdk12:jdk-12.0.1_12-slim
 
 ARG     GRADLE_VERSION
 ARG     APP_PORT
-ARG     CORE_PORT
+ENV     APP_PORT ${APP_PORT}
 
 RUN     apt-get update -y && \
         apt-get install unzip -y && \
         apt-get install git -y && \
         apt-get install maven -y && \
+        apt-get install mongodb -y && \
         apt-get install wget -y
 
 RUN     cd /usr/local && \
@@ -24,4 +25,4 @@ RUN     cd /root && \
 
 WORKDIR "/root/APEX-Nodemanager"
 
-CMD ["mvn", "spring-boot:run"]
+CMD mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}
