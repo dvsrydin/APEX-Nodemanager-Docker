@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+
+  node1:
+    build:
+      context: manager/app
+      args:
+        GRADLE_VERSION: "4.10.3"
+        APP_PORT: 9100
+        CORE_PORT: 9090
+    image: nodemanager
+    container_name: nodemanager
+    ports:
+      - 9100:9100
+      - 9090:9090
