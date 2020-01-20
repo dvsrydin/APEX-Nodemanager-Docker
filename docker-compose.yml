@@ -24,8 +24,8 @@ services:
   mongodb:
     image: mongo
     container_name: mongo-db-container
-    ports:
-      - 27017:27017
+    expose:
+      - 27017
     networks:
       - mongodb
     deploy:
