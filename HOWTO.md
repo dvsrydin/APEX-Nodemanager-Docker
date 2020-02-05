@@ -46,13 +46,17 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
   **1. Install Docker Compose**
   
-`Apt install docker-compose`
+`apt install docker-compose`
 
 
   **2. Build Docker**
-  
+Build:  
+`docker-compose up --build -d`
+
+Alternate (for fresh install):
 `docker-compose down && docker-compose build --no-cache && docker-compose up -d --force-recreate`
 
+Note: You must have full sudo access within the docker file.  
 
   **3. Confirm Docker Status**
   
@@ -84,7 +88,7 @@ https://XXX.XXX.XXX.XXX:9100/
 
 ## 3.1 Registration & Login
 ### 3.1.1 Registration Page
-The first time you visit the GUI, the registration page will be displayed.  Here you must enter:  
+The first time you visit the GUI, the registration page will be displayed.  You are creating a new registration, and so you will create a brand new profile:  
   *	Username
     *	*need to capture username requirements*
   *	Username is case-sensitive
