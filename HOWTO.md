@@ -3,7 +3,8 @@
 
 | Revision History | Contributor | Date | Notes |
 | --- | --- | --- | --- |
-0.1	| Devious_One	| Jan 25, 2020	| Initial version 
+0.1	| Devious_One	| Jan 25, 2020	| Initial version  
+0.2	| Devious_One	| Feb 6, 2020	| Minor Revisions  
 
 ### Table of Contents
 Section 1: Server Configuration & Details  
@@ -46,24 +47,28 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
   **1. Install Docker Compose**
   
-`Apt install docker-compose`
+`apt install docker-compose`
+
+  **2. Change directory** - You'll need to be in the Apex-Nodemanager-Docker folder  
+
+`cd APEX-Nodemanager-Docker`
 
 
-  **2. Build Docker**
+  **3. Build Docker**
   
 `docker-compose down && docker-compose build --no-cache && docker-compose up -d --force-recreate`
 
 
-  **3. Confirm Docker Status**
+  **4. Confirm Docker Status**
   
 `docker container ls`
 
 
-  **4. Realtime view of logs**
+  **5. Realtime view of logs**
   
 `docker logs -f nodemanager`
 
-  **5. Confirm both Docker containers are running**
+  **6. Confirm both Docker containers are running**
   
 
 | Container Name | Status | 
