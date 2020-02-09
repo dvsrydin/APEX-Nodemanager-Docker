@@ -1,6 +1,6 @@
-# Apex Network
+# Supernode GUI Installation Guide & Support Documentation
 
-## Important commands
+### Important commands
 
 #### Build & Start
 docker-compose up -d --force-recreate
@@ -15,8 +15,7 @@ docker logs -f nodemanager
 #### Bash into container
 docker exec -it nodemanager /bin/bash
 
-## Supernode GUI Installation Guide & Support Documentation
-
+### Revision
 | Revision History | Contributor | Date | Notes |
 | --- | --- | --- | --- |
 0.1	| Devious_One	| Jan 25, 2020	| Initial version 
