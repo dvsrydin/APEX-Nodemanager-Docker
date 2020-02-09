@@ -24,4 +24,4 @@ RUN     cd /root &&\
 
 WORKDIR "/root/APEX-Nodemanager"
 
-CMD mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}
+CMD     mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}
