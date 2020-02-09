@@ -6,6 +6,8 @@
 docker-compose build --no-cache && docker-compose up -d
 #### Reset (Delete) Containers
 docker-compose down -v
+#### Prune old container builds
+docker system prune
 #### Start
 docker-compose start
 #### Stop
