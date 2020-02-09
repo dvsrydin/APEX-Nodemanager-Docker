@@ -1,5 +1,7 @@
 version: '3.2'
+
 services:
+
   nodemanager:
     build:
       context: manager/app
@@ -13,14 +15,24 @@ services:
       - 9090:9090
     networks:
       - mongodb
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 12000M
 
   mongodb:
     image: mongo
     container_name: mongo-db-container
-    ports:
-      - 27017:27017
+    expose:
+      - 27017
     networks:
       - mongodb
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4000M
 
 networks:
   mongodb:
