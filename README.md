@@ -3,7 +3,7 @@
 ### Important commands
 
 #### Build & Start
-docker-compose up -d --force-recreate
+docker-compose build --no-cache && docker-compose up -d
 #### Reset (Delete) Containers
 docker-compose down -v
 #### Start
