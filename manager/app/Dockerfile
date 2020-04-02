@@ -1,4 +1,4 @@
-FROM    adoptopenjdk/openjdk12:jdk-12.0.1_12-slim
+FROM    adoptopenjdk/openjdk12:jdk-12.0.2_10-slim
 
 ARG     GRADLE_VERSION
 ARG     APP_PORT
@@ -18,10 +18,9 @@ RUN     cd /usr/local &&\
 ENV     GRADLE_HOME=/usr/local/gradle-${GRADLE_VERSION}
 ENV     PATH=$PATH:$GRADLE_HOME/bin
 
-RUN     cd /root &&\
-        git clone https://github.com/APEX-Network/APEX-Nodemanager.git &&\
+WORKDIR /root
+
+RUN     git clone https://github.com/APEX-Network/APEX-Nodemanager.git &&\
         git clone https://github.com/APEX-Network/APEX-Blockchain-Core.git
 
-WORKDIR "/root/APEX-Nodemanager"
-
-CMD     mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}
+CMD     mvn -f APEX-Nodemanager spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}

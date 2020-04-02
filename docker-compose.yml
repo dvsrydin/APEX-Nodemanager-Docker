@@ -1,5 +1,9 @@
 version: '2.3'
 
+volumes:
+  nodemanager-volume:
+  mongodb-volume:
+
 services:
 
   nodemanager:
@@ -10,6 +14,8 @@ services:
         APP_PORT: 9100
     image: nodemanager
     container_name: nodemanager
+    volumes:
+      - nodemanager-volume:/root
     ports:
       - 9100:9100
       - 9090:9090
@@ -20,6 +26,8 @@ services:
   mongodb:
     image: mongo
     container_name: mongo-db-container
+    volumes:
+      - mongodb-volume:/data/db
     expose:
       - 27017
     networks:
