@@ -99,7 +99,8 @@ services:
     expose:
       - 27017
     networks:
-      - testnet
+      testnet:
+        ipv4_address: 172.28.1.5
     mem_limit: 2000m
 
 networks:
