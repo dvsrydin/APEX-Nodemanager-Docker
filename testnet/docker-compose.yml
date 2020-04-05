@@ -19,6 +19,8 @@ services:
         CONF_NAME: "node-1-settings.conf"
     image: node-1
     container_name: testnet-node-1
+    depends_on:
+      - node-3
     volumes:
       - testnet-vol-1:/apex
     ports:
@@ -39,6 +41,8 @@ services:
         CONF_NAME: "node-2-settings.conf"
     image: node-2
     container_name: testnet-node-2
+    depends_on:
+      - node-3
     volumes:
       - testnet-vol-2:/apex
     ports:
