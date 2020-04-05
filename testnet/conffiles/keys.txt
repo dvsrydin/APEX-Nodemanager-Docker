@@ -1,0 +1,26 @@
+Init1
+priv key raw:         97b7c5875b8a5207e0cdf5b4050cb8215065ddcb36622bf733d55eca40250c39
+priv key WIF format:  L2JdXVfeHYQdvhx7ivqpfMePXJYw5WUeSCfBpjvqUbkQ96fSUCvs
+pub key (compressed): 03d11d8395700babdf022252081180e8909fe311ca01f46cb585566249172a9743
+pub key script:       2103d11d8395700babdf022252081180e8909fe311ca01f46cb585566249172a9743ac
+script hash160:       edefb082ed2e9487041abe8a28a5363c61d66bd5
+Address:              APPebWC9pvw6SvkGHV38AqG559TvJ4tuc1V
+Neo Address:          AdTxvt1wLBG23hy9xUTcNdLXh4WfEyoHgL
+
+Init2
+priv key raw:         4c8de7f71527bdc76f85b95c6c21c21eb5062c1728229b668909602c48d8c6b4
+priv key WIF format:  KynXFsDZuirFbD86KLhznP47BkhEPybubKcZS23JXDUVicUVKXyL
+pub key (compressed): 0346e313b74c3ccb45b57b55cf369ebc55b447b05fa59393048e505ed35d35e28b
+pub key script:       210346e313b74c3ccb45b57b55cf369ebc55b447b05fa59393048e505ed35d35e28bac
+script hash160:       8dc34d5f4a634db23def2e6ba35df5537a9a304f
+Address:              APEt5ThLdoXiMGQkDmGnfY271vJrii5LxxM
+Neo Address:          AUhStPCkCmsvPNT6Ei875PNUTuT5x9equk
+
+Init3
+priv key raw:         f7496229a0a41c6ef92b60b4cb1673765acf1677c0d8778d8e6f945472587c6a
+priv key WIF format:  L5WQNiLNsHVAMfCTxWkveXKVXJ1EFXAv553pL9v2jmXmGb71tsCt
+pub key (compressed): 030e617bb29ea1c4ae3cbdc73e55006882b96eb112fbe6a144cef1e65bccfefe96
+pub key script:       21030e617bb29ea1c4ae3cbdc73e55006882b96eb112fbe6a144cef1e65bccfefe96ac
+script hash160:       658d4ebabd84f2946a5c681055ea650ad5d7ab9a
+Address:              APBDTkQUxsorvSBfWZG9hCkiv1Cqc5P6vXH
+Neo Address:          AR2qB6M5H42VZ9NP2hV8k7zNYoRyBQALMj
