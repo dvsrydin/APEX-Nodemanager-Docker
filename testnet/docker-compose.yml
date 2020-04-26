@@ -75,10 +75,11 @@ services:
 
   nodemanager:
     build:
-      context: ../manager/app
+      context: app
       args:
         GRADLE_VERSION: "4.10.3"
         APP_PORT: 9110
+        CONF_NAME: "nodemanager-settings.conf"
     image: testnet-nodemanager
     container_name: testnet-nodemanager
     volumes:
