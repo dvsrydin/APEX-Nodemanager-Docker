@@ -8,9 +8,9 @@ docker-compose build --no-cache && docker-compose up -d
 docker-compose down -v
 #### Prune old container builds
 docker system prune
-#### Start
+#### Start - run this command in the Apex-Nodmanager-Docker directory
 docker-compose start
-#### Stop
+#### Stop - run this command in the Apex-Nodmanager-Docker directory
 docker-compose stop
 #### See container logs
 docker logs -f nodemanager
@@ -185,10 +185,21 @@ After you’ve selected Start
  
 ### 3.2.4 Settings
 
-#### A. Supernode Manager Updates
-To update your current password, enter your current password, your new password, and your new password again.  Click Change.  If successful, you will be logged out, and redirected back to the login page.  
+#### A. Updating your Supernode Manager
+When an update is available (via notification from the Developers) the update process requires steps both from the Supernode Manager (UI) & Docker (Server).
+1 - Within the Supernode Manager UI -> Settings tab, click on 'Update'.
+  Note: Please make sure your node is shut down before restarting the application via Docker
+2 - Within the Supernode Manager UI -> Node tab, click on 'Stop'.  The page will refresh and identify that your Supernode is not currently running.
+3 - Within your Server, navigate to the Apex-Supernode-Docker directory.  Run the following two commands. 
+3.1 - docker-compose stop.
+Note: Allow the stop process to fully complete.
+3.2 - docker-compose start
+
+After the Docker has been restarted, you will be logged out of the Supernode UI.  You should now see the updates. 
 
 #### B. Change Password
+To update your current password, enter your current password, your new password, and your new password again.  Click Change.  If successful, you will be logged out, and redirected back to the login page.  
+
 If you have successfully updated your password, you will be logged out, and redirected to the login page. If you were unsuccessful in updating your password, the page will refresh and you will remain logged in.
  
 #### C. Forgotten Password / Forgotten 2FA
