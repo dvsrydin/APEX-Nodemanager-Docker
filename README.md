@@ -186,9 +186,10 @@ After you’ve selected Start
 ### 3.2.4 Settings
 
 #### A. Supernode Manager Updates
-To update your current password, enter your current password, your new password, and your new password again.  Click Change.  If successful, you will be logged out, and redirected back to the login page.  
 
 #### B. Change Password
+To update your current password, enter your current password, your new password, and your new password again.  Click Change.  If successful, you will be logged out, and redirected back to the login page.  
+
 If you have successfully updated your password, you will be logged out, and redirected to the login page. If you were unsuccessful in updating your password, the page will refresh and you will remain logged in.
  
 #### C. Forgotten Password / Forgotten 2FA
